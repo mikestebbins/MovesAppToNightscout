@@ -43,8 +43,7 @@ INPUT_FILENAME = 'testoutput.txt'
 # MONGOLAB DATABASE LOG-IN INFO PULLED FROM CONFIG FILE (CREATE YOUR OWN LIKE IN EXAMPLE)
 with open('.config') as f:
     config = f.read().splitlines()
-#MONGO_URL = 'mongodb://DataIn:g8cr3Xyvg9h8@ds054298.mongolab.com:54298/mikestebbinsdb2'
-#DB_NAME = 'mikestebbinsdb2'
+
 MONGO_URL = config[0]
 DB_NAME = config[1]
 
